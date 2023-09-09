@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIENDA FUTBOL PASION</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">TIENDA FUTBOL PASION</p>
+            <nav>
+                <a href="#somos-proya">Quienes Somos</a>
+                <a href="#nuestros-programas">Nuestros Programas</a>
+                <a href="#caracteristicas">Características</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Tienda Deportiva <br>Al mejor precio!</h1>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">FUTBOL PASION</span></h2>
+                <p>Nuestra aplicación te mantiene al tanto de los últimos eventos deportivos, carreras locales y competencias. Además, accede a ofertas y promociones exclusivas que te permitirán obtener los productos que necesitas a precios especiales. Mantente conectado con nosotros para no perderte ninguna oportunidad emocionante.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Nuestros productos</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Uniformes deportivos</h3>
+                    <p>venta de uniformes a mejores precios y de buena calidad! de nivel nacional y internacional</p>
+                    <button id="uniformes">+ Info</button>
+                    <script>
+                    const botonRedirigir = document.getElementById('uniformes');
+                    // Agrega un evento de clic al botón
+                    botonRedirigir.addEventListener('click', function() {
+                     // Redirige a la otra página
+                     window.location.href = './paginas/uniformes.html';
+                     
+        });
+    </script>
+                </div>
+                <div class="carta">
+                    <h3>Guayos</h3>
+                    <p>Venta de guayos al mejor precio al mejor calidad de todo tipo de marca adicional importados</p>
+                    <button id="guayos">+ Info</button>
+                    <script>
+                    const botonRedirigir1 = document.getElementById('guayos');
+                     // Agrega un evento de clic al botón
+                    botonRedirigir1.addEventListener('click', function() {
+                    // Redirige a la otra página
+                    window.location.href = './paginas/guayos.html';
+         });
+    </script>
+                </div>
+                <div class="carta">
+                    <h3>Balones</h3>
+                    <p>Balones de buena calidad a buen precio en el cual se tiene todo tipo de balon </p>
+                    <button id="balones">+ Info</button>
+                    <script>
+                        const botonRedirigir2 = document.getElementById('balones');
+                         // Agrega un evento de clic al botón
+                        botonRedirigir2.addEventListener('click', function() {
+                        // Redirige a la otra página
+                        window.location.href = './paginas/balones.html';
+             });
+        </script>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <h2>Caracteristicas</h2>
+            <ul>
+                <li>✔️ 100% online</li>
+                <li>✔️ De buena calidad</li>
+                <li>✔️ Envios nacionales</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>SUSCRIBETE AHORA!</h2>
+        <button id="aplica">APLICÁ YA!</button>
+        <script>
+            const botonRedirigir3 = document.getElementById('aplica');
+             // Agrega un evento de clic al botón
+            botonRedirigir3.addEventListener('click', function() {
+            // Redirige a la otra página
+            window.location.href = './paginas/aplica.html';
+ });
+</script>
+    </section>
+
+    <footer>
+        <div class="container">
+                <li><a href="https://www.facebook.com/tu_pagina" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/tu_pagina" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/tu_pagina" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tu_pagina" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos Deportivos</title>
+    <link rel="stylesheet" href="pgsecundarias.css"> 
+</head>
+<body>
+    <header>
+        <h1>TIENDA FUTBOL PASION</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="producto">
+            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/a4cb579ff54647039f07ae3f012bdfaa_9366/Balon_UCL_Pro_Void_Blanco_HE3777.jpg">
+            <h2>balon Adidas</h2>
+            <p>Precio: $50.000</p>
+            <button class="alertadecompra" >Añadir al Carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="https://falabella.scene7.com/is/image/FalabellaCO/47187607_1?wid=800&hei=800&qlt=70">
+            <h2>balon Nike</h2>
+            <p>Precio: $50.000</p>
+            <button class="alertadecompra">Añadir al Carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="https://i.ebayimg.com/thumbs/images/g/2YIAAOSwnPtkEd0F/s-l640.jpg">
+            <h2>balon Puma</h2>
+            <p>Precio: $50.000</p>
+            <button class="alertadecompra" >Añadir al Carrito</button>
+        </section>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TIENDA FUTBOL PASION</p>
+    </footer>
+    
+    <script>
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const productName = button.getAttribute("data-product");
+                alert(`Compra exitosa: ${productName} ha sido añadido al carrito.`);
+            });
+        });
+    </script>
+</body>
+</html>
